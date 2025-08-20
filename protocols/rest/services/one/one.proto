@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package one;
+
+option go_package = "./;one";
+
+message ReqBody { repeated string Items = 1; }
+
+message Result {
+  int64 cpu = 1;
+  uint64 mem = 2;
+  int64 arrived = 3;
+}
